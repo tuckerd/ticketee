@@ -30,10 +30,11 @@ end
 group :test do
   gem 'capybara', '1.1.2'
   gem 'factory_girl', '2.6.4'
-  gem 'devise'
   gem 'email_spec', '1.2.1'
   gem 'simplecov', require: false
 end
+
+gem 'devise'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

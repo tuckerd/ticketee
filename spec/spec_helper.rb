@@ -18,6 +18,7 @@ RSpec.configure do |config|
   end
 
   config.include EmailSpec::Helpers #see page 175 of text
+  config.include Devise::TestHelpers, type: :controller #pg 204 of text
 
   # ## Mock Framework
   #

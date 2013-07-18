@@ -10,7 +10,11 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, 
           :password_confirmation, :remember_me  
 
+  attr_accessible :email, :password, :admin, as: :admin
+
   # attr_accessible :title, :body
 
-
+  def to_s
+    "#{email} (#{admin? ? "Admin" : "User"})"
+  end
 end

@@ -14,7 +14,7 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-07-17T22:08:17-07:00">2013-07-17T22:08:17-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-07-17T22:53:08-07:00">2013-07-17T22:53:08-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         4.08
+         4.16
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>12</b> files in total.
-    <b>100</b> relevant lines. 
-    <span class="green"><b>100</b> lines covered</span> and
+    <b>107</b> relevant lines. 
+    <span class="green"><b>107</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -63,9 +63,9 @@
       <tr>
         <td class="strong"><a href="#0a4d855b0dd080f507cbd20af544bec46f43bc6f" class="src_link" title="app/controllers/admin/users_controller.rb">app/controllers/admin/users_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>9</td>
-        <td>5</td>
-        <td>5</td>
+        <td>21</td>
+        <td>12</td>
+        <td>12</td>
         <td>0</td>
         <td>1.4</td>
       </tr>
@@ -77,7 +77,7 @@
         <td>8</td>
         <td>8</td>
         <td>0</td>
-        <td>7.3</td>
+        <td>8.0</td>
       </tr>
       
       <tr>
@@ -117,7 +117,7 @@
         <td>7</td>
         <td>7</td>
         <td>0</td>
-        <td>27.7</td>
+        <td>28.0</td>
       </tr>
       
       <tr>
@@ -183,15 +183,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.04
+         3.18
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
     <b>5</b> files in total.
-    <b>77</b> relevant lines. 
-    <span class="green"><b>77</b> lines covered</span> and
+    <b>84</b> relevant lines. 
+    <span class="green"><b>84</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -221,9 +221,9 @@
       <tr>
         <td class="strong"><a href="#0a4d855b0dd080f507cbd20af544bec46f43bc6f" class="src_link" title="app/controllers/admin/users_controller.rb">app/controllers/admin/users_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>9</td>
-        <td>5</td>
-        <td>5</td>
+        <td>21</td>
+        <td>12</td>
+        <td>12</td>
         <td>0</td>
         <td>1.4</td>
       </tr>
@@ -235,7 +235,7 @@
         <td>8</td>
         <td>8</td>
         <td>0</td>
-        <td>7.3</td>
+        <td>8.0</td>
       </tr>
       
       <tr>
@@ -374,7 +374,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         7.68
+         7.75
        </span>
     </span> hits/line)
   </h2>
@@ -416,7 +416,7 @@
         <td>7</td>
         <td>7</td>
         <td>0</td>
-        <td>27.7</td>
+        <td>28.0</td>
       </tr>
       
       <tr>
@@ -593,8 +593,8 @@
     <h3>app/controllers/admin/users_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>5</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>12</b> relevant lines. 
+      <span class="green"><b>12</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -614,8 +614,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="3">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="3">
+          <span class="hits">3</span>
           
           <code class="ruby">    @users = User.all(order: &quot;email&quot;)</code>
         </li>
@@ -651,6 +651,78 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @user = User.new(params[:user])</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    if @user.save</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      flash[:notice] = &quot;User has been created.&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      redirect_to admin_users_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      flash.now[:alert] = &quot;User has not been created.&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      render action: &quot;new&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">end</code>
@@ -704,14 +776,14 @@
           <code class="ruby">  def authorize_admin!</code>
         </li>
       
-        <li class="covered" data-hits="21" data-linenumber="6">
-          <span class="hits">21</span>
+        <li class="covered" data-hits="24" data-linenumber="6">
+          <span class="hits">24</span>
           
           <code class="ruby">    authenticate_user!</code>
         </li>
       
-        <li class="covered" data-hits="21" data-linenumber="7">
-          <span class="hits">21</span>
+        <li class="covered" data-hits="24" data-linenumber="7">
+          <span class="hits">24</span>
           
           <code class="ruby">    unless current_user.admin?</code>
         </li>
@@ -1520,8 +1592,8 @@
           <code class="ruby">  def admins_only(&amp;block)</code>
         </li>
       
-        <li class="covered" data-hits="131" data-linenumber="11">
-          <span class="hits">131</span>
+        <li class="covered" data-hits="133" data-linenumber="11">
+          <span class="hits">133</span>
           
           <code class="ruby">    yield if current_user.try(:admin?) </code>
         </li>

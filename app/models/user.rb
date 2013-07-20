@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :permissions  
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
@@ -12,7 +14,6 @@ class User < ActiveRecord::Base
 
   attr_accessible :email, :password, :admin, as: :admin
 
-  # attr_accessible :title, :body
 
   def to_s
     "#{email} (#{admin? ? "Admin" : "User"})"

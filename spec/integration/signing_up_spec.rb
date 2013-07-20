@@ -8,8 +8,9 @@ feature 'Signing Up' do
     fill_in 'Password', with: "password"
     fill_in 'Password confirmation', with: "password"
     click_button "Sign up"
-    # page.should have_content("You have signed up successfully.")
-    message = "Please open the link to activate your account."
+    # Should now be redirected to the root of the application AND
+    # reminded to open the link to activate the account.
+    message = "Please confirm your account before signing in."
     page.should have_content(message)
   end
 end

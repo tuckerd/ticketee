@@ -4,7 +4,12 @@ Ticketee::Application.routes.draw do
     resources :users
   end
 
-  devise_for :users
+  # Set up RegistrationsController as the Devise controller and 
+  # to use it for the registration part of the users resource
+  devise_for :users, controllers: { registrations: "registrations"}
+  get '/awating_confirmation',
+    to: "users#confirmation",
+    as: 'confirm_user'
 
   root to: "projects#index"
 

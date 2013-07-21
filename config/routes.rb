@@ -1,8 +1,14 @@
 Ticketee::Application.routes.draw do
   namespace :admin do
     root to: "base#index"
-    resources :users
+    resources :users do
+      resources :permissions
+    end
   end
+
+  put '/admin/users/:user_id/permissions',
+    to: 'admin/permissions#update',
+    as: :update_user_permissions
 
   # Set up RegistrationsController as the Devise controller and 
   # to use it for the registration part of the users resource

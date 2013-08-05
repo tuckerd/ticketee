@@ -13,3 +13,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore all source maps from coffee-rails-source-maps gem
+/public/source_maps/
+/public/assets/source_maps/

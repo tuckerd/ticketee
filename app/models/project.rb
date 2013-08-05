@@ -6,6 +6,12 @@ class Project < ActiveRecord::Base
 
   attr_accessible :description, :name
 
+  # scope :viewable_by, lambda do |user|
+  #   joins(:permissions).where(permissions: {action: "view",
+  #                                           user_id: user.id})
+  # end
+  # same as below
+
   def self.viewable_by(user)
     joins(:permissions).where(permissions: {action: "view",
                                             user_id: user.id})

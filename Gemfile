@@ -44,6 +44,9 @@ end
 gem 'devise'
 gem 'cancan', '1.6.7'
 
+#To attach files
+gem 'paperclip', '2.7.0'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

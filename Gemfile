@@ -25,6 +25,7 @@ gem 'jquery-rails'
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.11'
+  gem 'pry-rails'
 end
 
 group :development do
@@ -37,7 +38,6 @@ group :test do
   gem 'email_spec', '1.2.1'
   gem 'simplecov', require: false
   gem 'launchy'
-  gem 'pry'
 end
 
 #To do authorization

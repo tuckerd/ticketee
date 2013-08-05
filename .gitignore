@@ -5,6 +5,7 @@
 #   git config --global core.excludesfile ~/.gitignore_global
 
 # Ignore bundler config
+/.bundle
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -16,3 +17,6 @@
 # Ignore all source maps from coffee-rails-source-maps gem
 /public/source_maps/
 /public/assets/source_maps/
+
+# ignore all files saves with tests
+/public/system

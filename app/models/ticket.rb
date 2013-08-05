@@ -4,7 +4,8 @@ class Ticket < ActiveRecord::Base
   validates :title, :description, :presence => true
   validates :description, length: { minimum: 10 }
 
-  attr_accessible :description, :title, :asset
+  attr_accessible :description, :title, :assets_attributes
 
-  has_attached_file :asset #For paperclip attachments
+  has_many :assets
+  accepts_nested_attributes_for :assets
 end
